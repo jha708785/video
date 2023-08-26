@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image </title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+     ::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    body {
+        font-family: sans-serif;
+        /*background-image: url("/img/service/th.jfif");
+        background-repeat: no-repeat;
+        background-size: cover;*/
+        background: #2e8d86;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    h1 {
+        margin: 20px 0px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    .scrollBox {
+        float: right;
+        width: 400px;
+        height: 85vh;
+        margin: 20px 5px;
+        margin-top: 0px;
+        overflow-y: scroll;
+        background: #fff;
+        border-radius: 5px;
+    }
+    
+    .container .video {
+        float: left;
+        width: 860px;
+        height: 100%;
+        margin: 25px 20px;
+        border-radius: 10px;
+    }
+    
+    video {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        outline: none;
+    }
+    
+    .box {
+        overflow: hidden;
+        max-width: 400px;
+        margin: 10px 10px;
+        display: inline-block;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .box:hover {
+        box-shadow: 0px 5px 30px 0px #121212;
+    }
+    
+    .box img {
+        width: 100%;
+        display: block;
+    }
+    
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        background: #2e8d86;
+        color: #fff;
+        padding: 0.5em 1.2em;
+        margin-top: 0.8rem;
+        margin-left: 10px;
+        position: relative;
+        transition: 0.2s ease-in-out;
+        border-radius: 3px;
+    }
+    
+    .btn:hover {
+        box-shadow: 10px 15px 20px 0px #000000;
+        transform: scale(1.3);
+    }
+    
+    h3 {
+        color: #fff;
+        margin: 0 10px;
+    }
+    
+    .box .box-content {
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        opacity: 0;
+        z-index: 2;
+        transition: all .5s ease-in-out;
+    }
+    
+    .box::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        z-index: 1;
+        transform: scaleY(0);
+        transform-origin: 100% 100%;
+        background: rgba(0, 0, 0, 0.73);
+        transition: all .3s ease-in-out;
+    }
+    
+    .box:hover .box-content {
+        opacity: 1;
+        top: 30%;
+    }
+    
+    .box:hover::after {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+    
+    .scrollTop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        z-index: 100000;
+    }
+    
+    @media(max-width: 1310px) {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+    }
+    
+    @media(max-width: 865px) {
+        .container .video {
+            width: 95%;
+            float: none;
+        }
+        .container .scrollBox {
+            float: none;
+        }
+    }
+    
+    @media(max-width: 775px) {
+        .container .video {
+            width: 95%;
+        }
+    }
+    
+    @media(max-width: 500px) {
+        .container .video {
+            width: 97%;
+        }
+    }
+</style>
+
+</head>
+
+<body oncontextmenu="return false">
+
+    <div class="container">
+        <h1>Video work by Me </h1>
+        <div id="video_player">
+            <video controls poster="" class="video" id="video">
+                <source src="./Pehchan Na Paoge _ Hardil Pandya _ Anicka _ Youngveer _ Anmol D. _ Official Music Video 2021.mp4" type="video/mp4">
+                <source src="./Rab Na Kare Ke Ye Zindagi Kabhi Kisi Ko Daga De _ Heart Broken Love Story _ New Hindi Sad Song 2023.mp4" type="video/mp4">
+            </video>
+            <div class="scrollBox">
+                <div class="box">
+                    <img src="./Screenshot 2023-08-26 161237.png">
+                    <div class="box-content">
+                        <h3>O Ghrr Aja Perdesi..teri meri ek zindgri</h3>
+                        <a href="./Udd Jaa Kaale Kaava _ Gadar 2 _ Sunny Deol, Ameesha _ Mithoon, Udit N, Alka Y _ Uttam S,Anand Bakshi.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./Screenshot 2023-08-26 161619.png">
+                    <div class="box-content">
+                        <h3>Jaane tu kaha hai urti hawa pe tere pero ke nishan dekhe...!!</h3>
+                        <a href="./Rab Na Kare Ke Ye Zindagi Kabhi Kisi Ko Daga De _ Heart Broken Love Story _ New Hindi Sad Song 2023.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./Screenshot 2023-08-26 161736.png">
+                    <div class="box-content">
+                        <h3>Karna kvi tu mujhe nazro se dur...!!!!</h3>
+                        <a href="./Rab Na Kare Ke Ye Zindagi Kabhi Kisi Ko Daga De _ Heart Broken Love Story _ New Hindi Sad Song 2023.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./Screenshot 2023-08-26 161827.png">
+                    <div class="box-content">
+                        <h3>Heart Touching Song...!!</h3>
+                        <a href="./Zihaal e Miskin (Video) Javed-Mohsin _ Vishal Mishra, Shreya Ghoshal _ Rohit Z, Nimrit A _ Kunaal V.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./Sumit.png">
+                    <div class="box-content">
+                        <h3>My Video...!!</h3>
+                        <a href="./Kyo Kisi Ko (Video Song)_ Tere Naam _ Salman Khan, Bhumika Chawla  _Udit Narayan, Himesh Reshammiya.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./Screenshot 2023-08-26 162154.png">
+                    <div class="box-content">
+                        <h3>O Chhor ke jaane wale wapss na aaiyo..!!</h3>
+                        <a href="./Pehchan Na Paoge _ Hardil Pandya _ Anicka _ Youngveer _ Anmol D. _ Official Music Video 2021.mp4" class="btn">Watch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ###########################javascript for vidoe Player################ -->
+    <script type="text/javascript">
+        let anchors = document.querySelectorAll('div .btn');
+        let links = [...anchors];
+
+        for (let i = 0; i < links.length; i++) {
+            links[i].onclick = handler;
+        }
+
+        function handler(e) {
+            e.preventDefault();
+            let videotarget = this.getAttribute("href");
+            let filename = videotarget.substr(0, videotarget.lastIndexOf('.'));
+            let video = document.getElementById("video");
+            video.removeAttribute("poster");
+            let source = document.querySelectorAll("#video_player video source");
+            source[0].src = filename + ".mp4";
+            source[1].src = filename + ".m4v";
+            video.load();
+            video.play();
+        }
+    </script>
+</body>
+
+</html>
